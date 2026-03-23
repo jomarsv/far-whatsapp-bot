@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: whatsapp-bot
+    env: python
+    buildCommand: "pip install -r requirements_far_whatsapp_v2.txt"
+    startCommand: "gunicorn app_far_whatsapp_v2:app"
+    envVars:
+      - key: ENABLE_AI_COMMENT
+        value: false
