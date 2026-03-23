@@ -1,0 +1,1 @@
+web: gunicorn app_far_whatsapp_v2:app
